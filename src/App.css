@@ -6,8 +6,34 @@
   background-color: #222;
   padding: 20px;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .title {
   font-size: 1.5em;
+  margin: 0;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+}
+
+.colors {
+  padding: 20px;
+}
+
+.pins {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
