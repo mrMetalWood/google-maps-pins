@@ -54,6 +54,7 @@ const categories = [
   {name: 'constellation_star', type: 1},
   {name: 'paw', type: 1},
   {name: 'work', type: 1},
+  {name: 'home', type: 1},
   {name: 'basketball', type: 2},
   {name: 'badge', type: 2},
   {name: 'food-and-wine', type: 2},
