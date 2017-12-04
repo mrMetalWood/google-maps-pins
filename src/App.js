@@ -107,21 +107,30 @@ class App extends Component {
 
     return (
       <div className="app">
-        <header className="header">
+        <header
+          className="header"
+          style={{background: `#${pinBackground}`, color: `#${pinForeground}`}}>
           <h1 className="title">Google Maps Pins</h1>
         </header>
         <div className="content">
           <div className="colors">
-            <ChromePicker
-              disableAlpha
-              color={this.state.pinBackground}
-              onChangeComplete={this.handlePinBackgroundChange.bind(this)}
-            />
-            <ChromePicker
-              disableAlpha
-              color={this.state.pinForeground}
-              onChangeComplete={this.handlePinForegroundChange.bind(this)}
-            />
+            <div className="picker-wrapper">
+              <h3>Background Color</h3>
+              <ChromePicker
+                disableAlpha
+                color={this.state.pinBackground}
+                onChangeComplete={this.handlePinBackgroundChange.bind(this)}
+              />
+            </div>
+            <div className="picker-wrapper">
+              <h3>Fill Color</h3>
+
+              <ChromePicker
+                disableAlpha
+                color={this.state.pinForeground}
+                onChangeComplete={this.handlePinForegroundChange.bind(this)}
+              />
+            </div>
           </div>
 
           <div className="pins">
